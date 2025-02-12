@@ -32,4 +32,4 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function () {
 
 Route::apiResource('events.attendees', AttendeeController::class)
     ->scoped()
-    ->only(['index', 'show']);
+    ->only(['index', 'show', 'update']);
